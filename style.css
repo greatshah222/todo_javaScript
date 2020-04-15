@@ -68,6 +68,7 @@ form button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 
 }
 
@@ -91,3 +92,24 @@ form button:hover{
 .todo-item{
     padding: 0rem 0.5rem;
 }
+/*
+No not allow to delete when the user clicks the icon of the trash and check button
+
+*/
+.fa-trash, .fa-check{
+    pointer-events: none;
+
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+}
+
